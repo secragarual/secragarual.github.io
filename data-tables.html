@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Laura G. G.</title>
+        <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">  
+        <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+	</head>	
+
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<h5><a href="home.html">Laura G. G.</a></h5>
+				 	<ul class="menu">
+           		    	<li><h5><a href="about.html">About</a></h5></li>
+           	    		<li><h5><a href="work.html">Blog</a></h5></li>
+            		</ul>
+            	</nav>	
+            </div>
+		</header>
+
+		<main>
+			<div class="container-project">
+				<div id=project-title>
+                 	<h1 id="project-h1">Improving Kantox's data tables</h1>
+                 	<h2 id="project-h2">The long and winding road to improving a data table component by adding a new library and Tailwind.</h2>
+            	</div>
+            </div>
+
+        	<div class="container-project">
+        		<div id="project-summary">
+    				<div class="project-summary-item">
+    					<h4>Role</h4>
+    					<p>Project supervisor, Visual Design, Wireframing, Interaction, User-Testing and Analysis</p>
+    				</div>
+    				<div class="project-summary-item">
+    					<h4>Tools</h4>
+    					<p>Figma, Jira, Confluence</p>
+   					</div>
+   					<div class="project-summary-item">
+    					<h4>Duration</h4>
+    					<p>September 2023 - Ongoing</p>
+ 					</div>
+ 					<div class="project-summary-item">
+    					<h4>Team</h4>
+    					<p>Two product designers and one front-end developer</p>
+    				</div>   					
+        		</div>	
+        	</div>
+        </main>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Convincing our stakeholders of the need to create a new table component</h4>
+
+       	    			<p>Our platform uses data extensively, and as a result, <span class="highlight">tables are the most frequently used component of our platform</span>. However, we have been facing a problem for a while now - our data tables are quite basic and lack many of the features that are typically associated with a good enterprise SaaS table.</p>
+
+       	    			<p>It was a challenging task to convince our stakeholders that improving our data tables was a priority. <span class="highlight">We had to go together through several platform demos and share feedback from our users to communicate the importance of this issue</span>.</p>
+
+       	    			<p>Our approach was to make them understand that our current component was performing poorly and that <span class="highlight">introducing new functionalities to it in its current state would be very time-consuming</span>, hence the need to develop a new component.</p>
+
+       	    		</div>
+       	    </div>	
+      	</section>
+
+      	<section class="section">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Prioritising our wishlist of data table functionalities</h4>
+
+       	    			<p>Once we had the OK from our higher-ups, we started reviewing all our benchmarks and listed all the functionalities that we needed to introduce. Afterwards, <span class="highlight">we prioritised them using an impact-effort matrix</span>.</p>
+
+       	    			<p>Our objective was to find a front-end table library that we could use with Ember and that allowed us to introduce as many of the functionalities we listed as possible. Our front-end developer Dani researched and shared with us <span class="highlight">ember-headless-table</span>, which met all the requirements.</p>
+       	    		</div>	
+
+       	    		<figure class="content-image">
+       	    			<img src="./resources/images/overview_1.png">
+       	    			<figcaption><h6>XXX</h6></figcaption>
+       	    		</figure>
+
+
+       	    </div>	
+      	</section>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Introducing Tailwind CSS to improve our messy front-end</h4>
+
+       	    			<p>Introducing new functionalities in our tables meant we had to work on new user flows and actions that we did not have at the moment, such as being able to bulk select and approve orders.</p>
+
+       	    			<p>On top of that, <span class="highlight">we didn’t have a design system, style library, or component library to work with</span>, which resulted in our front end being a big mess of styles and components.</p>
+
+       	    			<p>To tackle this issue, we aligned with the front-end team and decided to introduce Tailwind CSS along with the new component</p>
+
+       	    			<p>Also, to move things forward quickly, <span class="highlight">we built a basic style library using the styles provided by Tailwind</span>, which could serve as a foundation. This allowed us to maintain consistency while making changes to the components and elements related to tables that we needed to migrate (such as pagination, iconography and filters).</p>
+       	    		</div>
+
+       	    		<figure class="content-image" >
+       	    			<img src="./resources/images/overview_1a.png">
+       	    			<figcaption><h6>XXX</h6></figcaption>
+       	    		</figure>
+       	    </div>	
+      	</section>
+
+      	<section class="section">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Improving tables one by one and anticipating future needs</h4>
+
+       	    			<p>We decided that the safest approach for migrating the tables was to do it <span class="highlight">one by one to minimize any issues that could arise during the development</span>. We chose to start with the “Pending FX Orders” table for the following reasons:</p>
+
+       	    			<ul>
+       	    				<li>It’s not one of our most frequently used tables. If something happened, we could mitigate the damage without much impact.</li>
+       	    				<li>It needed to be improved ASAP to allocate one of the functionalities listed above.</li>
+       	    			</ul>
+
+       	    			<p>Once the decision was made, my colleague Saagar designed the necessary components for the table, following our recently created style guidelines.</p>
+
+       	    			<p>Meanwhile, <span class="highlight">I iterated the existing component to introduce all the new functionalities we were going to implement</span>. This allowed us to anticipate any potential future needs and allocate behaviours and styles accordingly.</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>The challenge of building a table component in Figma</h4>
+
+       	    			<p>One of the most challenging things of this project was building the actual components in Figma. After checking several design systems and reading a few articles about the topic, we concluded that there isn’t a “good” way to address the task.</p>
+
+       	    			<p>Figma doesn’t have established guidelines on how to build a table. And something that could work for a specific company could not work for us. Thus, we decided to go our way: <span class="highlight">we built small components that could be placed on a layout to achieve as much flexibility as possible</span>.</p>
+
+       	    			<p>Leaving out the technical details (feel free to hit me up if you want to know more!), <span class="highlight">what we wanted to achieve was that building tables for us was something relatively effortless and could help us maintain consistency</span>.</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+      	<section class="section">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Testing our table components</h4>
+
+       	    			<p>To ensure the components and layouts we created worked properly, <span class="highlight">Saagar created a playground in Figma with a couple of exercises</span>:</p>
+
+       	    			<ul>
+       	    				<li>The first exercise was to build the "Pending FX Orders" table using our new components as we had it at the moment.</li>
+       	    				<li>The second exercise was to build the same table adding the new features we wanted to include.</li>
+       	    			</ul>
+
+       	    			<p>During the exercise, <span class="highlight">I took note of any issues that I encountered</span>, including how many times I had to detach a component and how long it took me to build the table. We repeated this process several times until we were able to create the table without any issues and in a short amount of time.</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Testing the table in a staging environment</h4>
+
+       	    			<p><span class="highlight">We designed a deliverable page in Figma that included all the table specifications</span> for Dani (our front-end developer) so that he could begin developing the component.</p>
+
+       	    			<p>Once Dani had created the first version, <span class="highlight">he deployed it in a staging environment</span>, and we tested it thoroughly. <span class="highlight">We made note of all the issues we encountered</span> and shared our feedback with him. We repeated this process a few times until we were satisfied and there were no more issues.</p>
+
+       	    			<p>The table is now ready to be deployed, and we're excited to have our first table in production with a robust component!</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+        <footer>
+        	<div class="container">
+        		<div id="footer">
+        			<h5>Laura G. G. © 2023</h5>
+        			<ul id="footer-list">
+						<li id="footer-link"><h5><a href="https://www.linkedin.com/in/lauragarcesgomez/">LinkedIn</a></h5></li>
+						<li id="footer-link"><h5><a href="https://twitter.com/gar_go_la_">Twitter</a></h5></li>
+					</ul>
+ 				</div>
+ 			</div>	
+		</footer>
+
+	</body>	
+</html>

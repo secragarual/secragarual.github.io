@@ -1,0 +1,310 @@
+/* -------------------- Fonts -------------------- */
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../fonts/Fraunces[SOFT\,WONK\,opsz\,wght].woff2) format('woff2-variations');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../fonts/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].woff2) format('woff2-variations');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url(../fonts/Epilogue[wght].woff2) format('woff2-variations');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url(../fonts/Epilogue-Italic[wght].woff2) format('woff2-variations');
+    font-style: italic;
+}
+
+/* -------------------- General styles -------------------- */
+* {
+    box-sizing: border-box;
+  }
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+html {
+    font-size: 16px;
+    color: #1F1F14;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 40px;
+}
+
+.container-project {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0px 40px;
+}
+
+/* -------------------- Text styles -------------------- */
+h1 {
+	font-family: 'Fraunces';
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 48, 'wght' 370;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 135%;
+}
+
+h1 a {
+	color: #1d4ed8;   
+}
+
+a {
+	color: #1F1F14;
+}
+
+h1 a:hover,
+h5 a:hover,
+p a:hover,
+nav li a:hover,
+footer li a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	font-family: 'Fraunces';
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 48, 'wght' 250;
+    font-style: italic;
+    font-size: 1.25rem;
+    padding: 0.5rem 0 0 0;
+    line-height: 140%;
+}
+
+h3 {
+	font-family: 'Fraunces';
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 24, 'wght' 370;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+h4 {
+	font-family: 'Epilogue';
+	font-style: medium;
+	font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+h5 {
+	font-family: 'Epilogue';
+	font-style: medium;
+	font-size: 1rem;
+    font-weight: 500;
+}
+
+h6 {
+	font-family: 'Epilogue';
+	font-style: light;
+	font-size: 1rem;
+    font-weight: 270;
+}
+
+p {
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-size: 1rem;
+    font-weight: 370;
+    line-height: 160%;
+}
+
+/* -------------------- Header/Nav -------------------- */
+header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	padding: 1.5rem 0;
+	background-color: #FFF;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 2rem;
+}
+
+/* -------------------- Home -------------------- */
+/* -------------------- Main -------------------- */
+#hero {
+	padding: 8rem 0;
+}
+
+#title {
+	max-width: 865px;
+}
+
+#card-grid {
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 3%;
+}
+
+/* -------------------- Project Card -------------------- */
+.project-card {
+	padding: 6% 6%;
+	border-radius: 0.25rem;
+}
+
+.project-card:hover {
+	background-color: #eff6ff;
+}
+
+.project-card-image {
+	width: 100%;
+	height: auto;
+}
+
+.project-card-text {
+	padding-top: 1rem;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer {
+	margin-top: auto;
+}
+
+#footer {
+	padding: 8rem 0 1.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+#footer-link {
+	float: right;
+	padding-left: 2rem;
+}
+
+/* -------------------- Project - Page -------------------- */
+/* -------------------- Title -------------------- */
+
+#project-title {
+ padding: 6rem 0 2rem 0;
+}
+
+#project-h1, #project-h2 {
+	text-align: left;
+	max-width: 766px;
+}
+
+/* -------------------- Summary -------------------- */
+#project-summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 3rem;
+}
+
+.project-summary-item {
+	width: 13rem;
+	margin: 1rem 1rem 1rem 0;
+}
+
+/* -------------------- Content -------------------- */
+
+.padding {
+	padding-bottom: 2rem;
+}
+
+section {
+	padding: 4rem 0 2.5rem 0;
+}
+
+.section-A {
+	background-color: #f8fafc;
+}
+
+.content-block {
+	max-width: 43rem;
+	width: 100%;
+	display: block;
+}
+
+.content-block h4 {
+    padding: 0 0 1rem 0;
+}
+
+.content-block p,
+.text-about p {
+    text-align: left;
+    line-height: 160%;
+    margin: 0 0 1.5rem 0;
+}
+
+.content-block a {
+	color: #1D4ED8;
+}
+
+.content-block ul {
+	padding: 0 0 1rem 2rem;
+}
+
+span.highlight {
+    font-weight: 550;
+}
+
+.content-block li {
+	font-family: 'Epilogue';
+	font-style: normal;
+    line-height: 160%;
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+}
+
+.content-image img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	padding: 1rem 0;
+}
+
+figcaption {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+/* -------------------- About -------------------- */
+
+.content-about {
+	padding: 10rem 0 3.5rem 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+
+.text-about {
+	margin-right: 5rem;
+	max-width: 32rem;
+}
+
+.image-about {
+	max-width: 35rem;
+	height: 100%;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Laura G. G.</title>
+        <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">  
+        <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+	</head>	
+
+	<body>
+		<header>
+			<div class="container">
+				<nav>
+					<h5><a href="home.html">Laura G. G.</a></h5>
+				 	<ul class="menu">
+           		    	<li><h5><a href="about.html">About</a></h5></li>
+           	    		<li><h5><a href="work.html">Blog</a></h5></li>
+            		</ul>
+            	</nav>	
+            </div>
+		</header>
+
+		<main>
+			<div class="container-project">
+				<div id=project-title>
+                 	<h1 id="project-h1">Overview Card Revamp</h1>
+                 	<h2 id="project-h2">Helping CFOs and treasurers understand their exposure status with relevant data and a comprehensible visualisation.</h2>
+            	</div>
+            </div>
+     
+
+       		<div class="container-project">
+        		<div id="project-summary">
+    				<div class="project-summary-item">
+    					<h4>Role</h4>
+    					<p>Visual Design, Wireframing, Interaction, User-Testing and Analysis</p>
+    				</div>
+    				<div class="project-summary-item">
+    					<h4>Tools</h4>
+    					<p>Figma, Microsoft Excel</p>
+   					</div>
+   					<div class="project-summary-item">
+    					<h4>Duration</h4>
+    					<p>April - May, 2022</p>
+ 					</div>
+ 					<div class="project-summary-item">
+    					<h4>Team</h4>
+    					<p>Two product designers, one product owner and one front-End developer</p>
+    				</div>   					
+        		</div>	
+        	</div>
+        </main>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>An Overview Card without hierarchy and a graph without a legend</h4>
+
+       	    			<p>Kantox is a fintech company that offers a software solution that helps businesses manage their exposure in foreign currencies and overcome FX risk.</p>
+
+       	    			<p>One of the pieces of the Kantox's platform is what we call the "Overview Card", a section where our clients can check the current status of their exposure for a specific currency pair.</p>
+
+       	    			<p>Developed as part of the MVP of the product it was sufficient as a starting point, but it presented some issues that needed to be addressed:</p>
+
+       	    			<ul>
+       	    				<li>The numbers displayed lacked hierarchy and it was unclear if they provided valuable information to the user.</li>
+       	    				<li>The graph lacked a legend, making it difficult to associate the values with the chart.</li>
+       	    			</ul>
+
+       	    			<p><span class="highlight">Our goal was to create an overview card that displayed relevant information to our clients and introduced a more comprehensive graph.</span></p>
+
+       	    		</div>
+       	    		<figure class="content-image">
+       	    			<img src="./resources/images/overview_1.png">
+       	    			<figcaption><h6>Overview card before the revamp. Good luck finding which blue means what.</h6></figcaption>
+       	    		</figure>
+       	    </div>	
+      	</section>
+
+      	<section class="section">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>If you don't have access to your users, chase your stakeholders</h4>
+
+       	    			<p>For various company reasons, our team has limited access to our users, which makes user research a difficult task. However, <span class="highlight">some of our stakeholders have direct contact with clients</span> something we could use to gather relevant insights and feedback.</p>
+
+       	    			<p>After careful analysis, we concluded that the most valuable information to provide was the hedged amount and the total exposure. For context, we also decided to include the live stream of the spot rate and a few other key figures.</p>
+
+       	    			<p>As for the graph, I wanted to make sure there wasn't any other type of graph that would make a better fit, so I checked the <a href="https://datavizproject.com/" target="_blank"> Data Viz Project </a> library to see if there was any other option. I figured out that a <span class="highlight">sunburst chart</span> would be a good choice since it could help us display the data hierarchically. Also, the library we use to create charts, ECharts, supported it without any issues.</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+      	<section class="section-A">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>"We all have 10,000 bad drawings in us. The sooner we get them out the better."</h4>
+
+       	    			<p>Once I had all the requirements I needed, I created several wireframes with different layouts and iterated them according to the feedback I had from stakeholders and peers.</p>
+       	    		</div>
+
+       	    		<figure class="content-image padding">
+       	    				<img src="./resources/images/overview_iterations.jpg">
+       	    				<figcaption><h6>Iterations with different types of layouts and visualizaions.</h6></figcaption>
+       	    		</figure>
+
+       	    		<div class="content-block">	
+       	    			<p>Since I had to work with the styles and colours from our design system, I chose the usual colours to reflect statuses (green for Hedged, yellow for Pending Execution and red for Rejected). For the rest, I used variations from our brand's primary colours.</p>
+
+       	    			<p>As a side note, <span class="highlight">I always create my wireframes with realistic data</span> to make the designs consistent so our stakeholders can focus on giving feedback without being distracted by placeholder data. To add the graph to the wireframes representing a realistic case, I plotted it with Microsoft Office and exported it as SVG to Figma. This way, I could edit it and build a functional prototype.</p>
+       	    		</div>
+
+       	    		<figure class="content-image" >
+       	    			<img src="./resources/images/overview_1a.png">
+       	    			<img src="./resources/images/overview_1b.png">
+       	    			<figcaption><h6>Overview card after renewal. When you hover over the graphs, the amounts corresponding to each state appear.</h6></figcaption>
+       	    		</figure>
+       	    </div>	
+      	</section>
+
+      	      	<section class="section">
+       	    <div class="container-project">	
+       	    		<div  class="content-block">
+       	    			<h4>Understanding our users with analytics tools (and someday with user testing)</h4>
+
+       	    			<p>As I mentioned, we can't chat with our clients as much as we'd like. However, that doesn't mean we can't collect feedback. Currently, <span class="highlight">we're using Pendo to understand how users interact with the chart </span>, and we've received very positive feedback from one of our clients.</p>
+
+       	    			<p>Our next steps are gathering more data from analytics to have a more solid data sample and (if possible) plan a few user tests and user research sessions with clients to iterate the card in the future.</p>
+       	    		</div>
+       	    </div>	
+      	</section>
+
+        <footer>
+        	<div class="container">
+        		<div id="footer">
+        			<h5>Laura G. G. © 2023</h5>
+        			<ul id="footer-list">
+						<li id="footer-link"><h5><a href="https://www.linkedin.com/in/lauragarcesgomez/">LinkedIn</a></h5></li>
+						<li id="footer-link"><h5><a href="https://twitter.com/gar_go_la_">Twitter</a></h5></li>
+					</ul>
+ 				</div>
+ 			</div>	
+		</footer>
+
+	</body>	
+</html>
